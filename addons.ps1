@@ -10,7 +10,7 @@ cinst dymo-connect -y
 cinst adobereader -y
 
 #MS Office 
-choco install Office365Business -params '"/productid:O365HomePremRetail "' 
+choco install Office365Business -params '"/productid:O365HomePremRetail /eula "' 
 
 #Install 1password 
 cinst 1password -y
@@ -19,6 +19,9 @@ cinst 1password -y
 #Install 3cx
 cinst 3cx -y
 
+
+#Install Deepl
+choco install deepl -y
 
 #Install autodesk-fusion 
 cinst autodesk-fusion360 -y
