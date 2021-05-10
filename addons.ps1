@@ -31,6 +31,9 @@ cinst autodesk-fusion360 -y
 cinst electrum -y
 
 
+#Install ledgerlive
+choco install ledger-live -y
+
 #Install protonvpn
 cinst protonvpn -y
 
