@@ -4,6 +4,8 @@ cinst azure-cli -y
 # Windows Subsystems/Features
 choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
+Write-host "install https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi" 
+Write-host "wsl --set-default-version 2"
 
 #install dotnet-5.0-sdk
 #cinst dotnet-5.0-sdk -y
