@@ -32,23 +32,23 @@ refreshenv
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 refreshenv
 
-code --force --install-extension BotFrameworkCommunity.bfc-vscode-snippets
+#code --force --install-extension BotFrameworkCommunity.bfc-vscode-snippets
 code --force --install-extension Dedsec727.jekyll-run
-code --force --install-extension dynamicwebpaige.thinking-in-data
+#code --force --install-extension dynamicwebpaige.thinking-in-data
 code --force --install-extension fernandoescolar.vscode-solution-explorer
 code --force --install-extension gimparm.autoopenworkspace
 code --force --install-extension mohsen1.prettify-json
-code --force --install-extension ms-azuretools.vscode-azurefunctions
-code --force --install-extension ms-azuretools.vscode-azureresourcegroups
-code --force --install-extension ms-azuretools.vscode-azurestaticwebapps
-code --force --install-extension ms-python.python
-code --force --install-extension ms-toolsai.jupyter
-code --force --install-extension ms-vscode.azure-account
-code --force --install-extension ms-vscode.azurecli
+#code --force --install-extension ms-azuretools.vscode-azurefunctions
+#code --force --install-extension ms-azuretools.vscode-azureresourcegroups
+#code --force --install-extension ms-azuretools.vscode-azurestaticwebapps
+#code --force --install-extension ms-python.python
+#code --force --install-extension ms-toolsai.jupyter
+#code --force --install-extension ms-vscode.azure-account
+#code --force --install-extension ms-vscode.azurecli
 code --force --install-extension ms-vscode.powershell-preview
-code --force --install-extension ritwickdey.LiveServer
+#code --force --install-extension ritwickdey.LiveServer
 code --force --install-extension sohamkamani.code-eol
-
+code --force --install-extension ms-vscode-remote.remote-wsl
 
 #install node.js lts, python3
 #cinst nodejs-lts -y
