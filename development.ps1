@@ -18,10 +18,10 @@ cinst cascadiacodepl -y
 
 # visualstudio code and visualstudio enterprise
 # Install Visual Studio
-cinst visualstudio-installer -y
-cinst visualstudio2019-workload-vctools -y
-cinst visualstudio2019buildtools -y
-refreshenv
+#cinst visualstudio-installer -y
+#cinst visualstudio2019-workload-vctools -y
+#cinst visualstudio2019buildtools -y
+#refreshenv
 
 #Install Visual Studio Code
 cinst vscode-insiders -y
@@ -41,8 +41,8 @@ code --force --install-extension mohsen1.prettify-json
 #code --force --install-extension ms-azuretools.vscode-azurefunctions
 #code --force --install-extension ms-azuretools.vscode-azureresourcegroups
 #code --force --install-extension ms-azuretools.vscode-azurestaticwebapps
-#code --force --install-extension ms-python.python
-#code --force --install-extension ms-toolsai.jupyter
+code --force --install-extension ms-python.python
+code --force --install-extension ms-toolsai.jupyter
 #code --force --install-extension ms-vscode.azure-account
 #code --force --install-extension ms-vscode.azurecli
 code --force --install-extension ms-vscode.powershell-preview
@@ -52,7 +52,7 @@ code --force --install-extension ms-vscode-remote.remote-wsl
 
 #install node.js lts, python3
 #cinst nodejs-lts -y
-cinst python3 -y
+#cinst python3 -y
 #cinst yarn -y
 
 #Install Git
@@ -65,7 +65,7 @@ git config --global --bool pull.rebase true
 
 
 #Install Github-Desktop
-cinst github-desktop -y
+#cinst github-desktop -y
 
 
 #Installing posh-git and oh-my-posh
@@ -82,8 +82,8 @@ Update-Module -Name oh-my-posh
 
 
 #Install NuGet Package Explorer
-cinst nugetpackageexplorer -y
-if (test-path (Join-Path ([Environment]::GetFolderPath("Desktop")) "NugetPackageExplorer.exe.lnk")) {
-    Move-Item (Join-Path ([Environment]::GetFolderPath("Desktop")) "NugetPackageExplorer.exe.lnk") (Join-Path ([Environment]::GetEnvironmentVariable("AppData")) "Microsoft\Windows\Start Menu\Programs\NugetPackageExplorer.lnk")
-}
+#cinst nugetpackageexplorer -y
+#if (test-path (Join-Path ([Environment]::GetFolderPath("Desktop")) "NugetPackageExplorer.exe.lnk")) {
+#    Move-Item (Join-Path ([Environment]::GetFolderPath("Desktop")) "NugetPackageExplorer.exe.lnk") (Join-Path ([Environment]::GetEnvironmentVariable("AppData")) "Microsoft\Windows\Start Menu\Programs\NugetPackageExplorer.lnk")
+#}
 #Write-host "Please install: `nhttps://github.com/microsoft/BotFramework-Composer-Nightlies,`nhttps://github.com/microsoft/BotFramework-Emulator"
