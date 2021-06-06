@@ -27,6 +27,8 @@ cinst cascadiacodepl -y
 cinst vscode-insiders -y
 refreshenv
 
+#Install git-cli
+cinst gh -y
 
 #Install Visual Studio Code Extensions
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
